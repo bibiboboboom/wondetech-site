@@ -3,6 +3,7 @@
 import FeatureCard from "@/components/FeatureCard";
 import { useState } from "react";
 import Modal from "@/components/ui/Modal";
+import Link from "next/link";
 
 export default function FeaturesPage() {
   const [open, setOpen] = useState<null | "repo" | "tagging" | "extraction" | "workflows">(null);
@@ -47,6 +48,11 @@ export default function FeaturesPage() {
             <p>📸 [Placeholder for image: file tree + search preview]</p>
             <p>🎬 [Placeholder for demo: uploading + retrieval scenario]</p>
           </div>
+          <div className="pt-2">
+            <Link href="/features/unified-repository" className="inline-flex items-center gap-2 rounded-md border border-black/10 dark:border-white/15 px-4 py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10">
+              View Full Page →
+            </Link>
+          </div>
         </div>
       </Modal>
 
@@ -73,6 +79,11 @@ export default function FeaturesPage() {
             <p>📸 [Placeholder for image: tag admin panel]</p>
             <p>🎬 [Placeholder for demo: automated tag assignment + filter search]</p>
           </div>
+          <div className="pt-2">
+            <Link href="/features/smart-tagging" className="inline-flex items-center gap-2 rounded-md border border-black/10 dark:border-white/15 px-4 py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10">
+              View Full Page →
+            </Link>
+          </div>
         </div>
       </Modal>
 
@@ -97,6 +108,11 @@ export default function FeaturesPage() {
           <div className="space-y-2 text-sm text-black/70 dark:text-white/70">
             <p>📸 [Placeholder for image: OCR process overlay]</p>
             <p>🎬 [Placeholder for demo: drag-and-drop import + auto metadata fill]</p>
+          </div>
+          <div className="pt-2">
+            <Link href="/features/knowledge-extraction" className="inline-flex items-center gap-2 rounded-md border border-black/10 dark:border-white/15 px-4 py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10">
+              View Full Page →
+            </Link>
           </div>
         </div>
       </Modal>
@@ -123,6 +139,11 @@ export default function FeaturesPage() {
           <div className="space-y-2 text-sm text-black/70 dark:text-white/70">
             <p>📸 [Placeholder for image: workflow dashboard + RFID scan]</p>
             <p>🎬 [Placeholder for demo: submit + approve + borrow + return]</p>
+          </div>
+          <div className="pt-2">
+            <Link href="/features/document-workflows" className="inline-flex items-center gap-2 rounded-md border border-black/10 dark:border-white/15 px-4 py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10">
+              View Full Page →
+            </Link>
           </div>
         </div>
       </Modal>
